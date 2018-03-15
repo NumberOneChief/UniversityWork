@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-03-14T22:16:20Z" name="Default suite" finished-at="2018-03-14T22:16:21Z" duration-ms="456">
+    <groups>
+    </groups>
+    <test started-at="2018-03-14T22:16:20Z" name="Default test" finished-at="2018-03-14T22:16:21Z" duration-ms="456">
+      <class name="com.admiral.tests.UnitTests">
+        <test-method signature="testCreateWebRow()[pri:0, instance:com.admiral.tests.UnitTests@4009e306]" started-at="2018-03-14T22:16:20Z" name="testCreateWebRow" finished-at="2018-03-14T22:16:21Z" duration-ms="443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateWebRow -->
+      </class> <!-- com.admiral.tests.UnitTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
