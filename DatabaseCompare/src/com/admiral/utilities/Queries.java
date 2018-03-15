@@ -48,14 +48,4 @@ public class Queries {
 		}
 	}
 	
-	public void displayWebProp(WebProperty webProp){
-		
-		StringBuffer buffer = new StringBuffer();
-		buffer.append("ID: " + webProp.getId() +" | ");
-		buffer.append("Key: " + webProp.getKey() +" | ");
-		buffer.append("Brand: " + webProp.getBrand() +" | ");
-		buffer.append("Value: " + webProp.getValue() +" | ");
-		System.out.println(buffer.toString());
-	}
-	
 }

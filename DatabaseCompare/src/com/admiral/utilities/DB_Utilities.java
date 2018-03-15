@@ -12,8 +12,10 @@ import com.admiral.tables.WebProperty;
 public class DB_Utilities {
 
 	public PropertyFile propFile = new PropertyFile();
-	public ArrayList <WebProperty>noMatchWebRowList = new ArrayList<>();
+	public ArrayList <WebProperty>noMatchedWebRowList = new ArrayList<>();
+	public ArrayList <WebProperty> expectedMatchedWebRowList = new ArrayList<>();
 	public ArrayList <WebProperty> matchedWebRowList = new ArrayList<>();
+	
 	
 	public Connection getConnection(DB_Type dbType, String database) throws SQLException {
 		Connection conn = null;
@@ -59,7 +61,6 @@ public class DB_Utilities {
 				brand = rs.getString("Brand");
 				value = rs.getString("Value");
 				webProp = new WebProperty(id, key, brand, value);
-				webQuery.displayWebProp(webProp);
 				webRowObjectList.add(webProp);
 			}
 			webQuery.displayWebData(rs);
@@ -70,31 +71,50 @@ public class DB_Utilities {
 		return webRowObjectList;
 	}
 	
-	public ArrayList<WebProperty> findMatchingKey(ArrayList<WebProperty> expectedRow, 
+	public ArrayList<WebProperty> checkForWebRowMatches(ArrayList<WebProperty> expectedRow, 
 				ArrayList<WebProperty> comparedRow) {
 		
 		for (int i = 0; i < expectedRow.size(); i++) {
 			
 			WebProperty expectedWebProp = expectedRow.get(i);
-			String expectedWebKey = expectedWebProp.getKey();
+			String expectedKey = expectedWebProp.getKey();
+			String expectedBrand = expectedWebProp.getBrand();
+			boolean noMatch = false;
 			
 			for (int j = 0; j < comparedRow.size(); j++) {
 				
 				WebProperty compareWebProp = comparedRow.get(j);
-				String compareWebKey = compareWebProp.getKey();
+				String compareKey = compareWebProp.getKey();
+				String compareBrand = compareWebProp.getBrand();
 				
-				if(expectedWebKey.equals(compareWebKey)) {
-					if(!matchedWebRowList.contains(compareWebProp)) {
-						matchedWebRowList.add(compareWebProp);
-					}
-				}else if(!expectedWebKey.equals(compareWebKey)) {
-					if(!noMatchWebRowList.contains(compareWebProp)) {
-						noMatchWebRowList.add(compareWebProp);
-					}
+				if(expectedKey.equals(compareKey) && expectedBrand.equals(compareBrand)) {
+					expectedMatchedWebRowList.add(expectedWebProp);
+					matchedWebRowList.add(compareWebProp);
+					noMatch = false;
+					break;
+				}else {
+					noMatch = true;
 				}
 			}
+			if(noMatch) {
+				noMatchedWebRowList.add(expectedWebProp);
+			}
 		}
-		return noMatchWebRowList;
+		return noMatchedWebRowList;
+	}
+	
+	public void compareValues() {
+		
+	}
+	
+	public void displayWebProp(WebProperty webProp){
+		
+		StringBuffer buffer = new StringBuffer();
+		buffer.append("ID: " + webProp.getId() +" | ");
+		buffer.append("Key: " + webProp.getKey() +" | ");
+		buffer.append("Brand: " + webProp.getBrand() +" | ");
+		buffer.append("Value: " + webProp.getValue() +" | ");
+		System.out.println(buffer.toString());
 	}
 	
 	/**
