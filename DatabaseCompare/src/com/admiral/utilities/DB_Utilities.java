@@ -7,15 +7,16 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import com.admiral.tables.WebProperty;
+import com.admiral.tables.WebPropertyComparison;
 
 
 public class DB_Utilities {
 
 	public PropertyFile propFile = new PropertyFile();
-	public ArrayList <WebProperty>noMatchedWebRowList = new ArrayList<>();
+	public ArrayList <WebProperty> noMatchedWebRowList = new ArrayList<>();
 	public ArrayList <WebProperty> expectedMatchedWebRowList = new ArrayList<>();
 	public ArrayList <WebProperty> matchedWebRowList = new ArrayList<>();
-	
+	public ArrayList <WebPropertyComparison> webRowList = new ArrayList<>();
 	
 	public Connection getConnection(DB_Type dbType, String database) throws SQLException {
 		Connection conn = null;
@@ -74,12 +75,16 @@ public class DB_Utilities {
 	public ArrayList<WebProperty> checkForWebRowMatches(ArrayList<WebProperty> expectedRow, 
 				ArrayList<WebProperty> comparedRow) {
 		
-		for (int i = 0; i < expectedRow.size(); i++) {
+		boolean matchSize = (expectedRow.size() == comparedRow.size());
+		
+//		for (int i = 0; i < expectedRow.size(); i++) {
+		for(WebProperty expectedWebProp : expectedRow){
 			
-			WebProperty expectedWebProp = expectedRow.get(i);
+//			WebProperty expectedWebProp = expectedRow.get(i);
+			
 			String expectedKey = expectedWebProp.getKey();
 			String expectedBrand = expectedWebProp.getBrand();
-			boolean noMatch = false;
+			boolean match = false;
 			
 			for (int j = 0; j < comparedRow.size(); j++) {
 				
@@ -88,15 +93,17 @@ public class DB_Utilities {
 				String compareBrand = compareWebProp.getBrand();
 				
 				if(expectedKey.equals(compareKey) && expectedBrand.equals(compareBrand)) {
+					
+					WebPropertyComparison webMatch = new WebPropertyComparison(expectedWebProp, compareWebProp);
+					webRowList.add(webMatch);
+
 					expectedMatchedWebRowList.add(expectedWebProp);
 					matchedWebRowList.add(compareWebProp);
-					noMatch = false;
+					match = true;
 					break;
-				}else {
-					noMatch = true;
 				}
 			}
-			if(noMatch) {
+			if(!match) {
 				noMatchedWebRowList.add(expectedWebProp);
 			}
 		}

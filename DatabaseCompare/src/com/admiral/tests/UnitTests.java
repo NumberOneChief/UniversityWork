@@ -1,17 +1,5 @@
 package com.admiral.tests;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-
-import org.testng.annotations.Test;
-
-import com.admiral.tables.WebProperty;
-import com.admiral.utilities.DB_Type;
-import com.admiral.utilities.DB_Utilities;
-import com.admiral.utilities.PropertyFile;
-import com.admiral.utilities.Queries;
-
 public class UnitTests {
 
 //	@Test

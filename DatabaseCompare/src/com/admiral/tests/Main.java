@@ -3,6 +3,7 @@ package com.admiral.tests;
 import java.util.ArrayList;
 
 import com.admiral.tables.WebProperty;
+import com.admiral.tables.WebPropertyComparison;
 import com.admiral.utilities.DB_Type;
 import com.admiral.utilities.DB_Utilities;
 
@@ -24,6 +25,18 @@ public class Main {
 			System.out.printf("%35s","-----------------------\n");
 			dbUtils.displayWebProp(webProp);
 		}
+		
+		for(WebPropertyComparison webComparison : dbUtils.webRowList){
+			StringBuffer buffer = new StringBuffer();
+			
+			buffer.append(webComparison.getWebProperty().getBrand());
+			buffer.append(webComparison.getWebProperty().getKey());
+			buffer.append(webComparison.isMatch());
+
+			System.out.println(buffer.toString());
+		}
+		
+		
 	}
 
 }
