@@ -1,4 +1,4 @@
-package com.admiral.utilities;
+package com.admiral.controllers;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,13 +8,16 @@ import java.util.ArrayList;
 
 import com.admiral.tables.WebProperty;
 import com.admiral.tables.WebPropertyComparison;
+import com.admiral.utilities.DB_Type;
+import com.admiral.utilities.PropertyFile;
+import com.admiral.utilities.Queries;
 
 
-public class DB_Utilities {
+public class WebPropertyController {
 
 	public PropertyFile propFile = new PropertyFile();
-	public ArrayList <WebProperty> noMatchedWebRowList = new ArrayList<>();
-	public ArrayList <WebProperty> expectedMatchedWebRowList = new ArrayList<>();
+	public ArrayList <WebProperty> valuesMismatchList = new ArrayList<>();
+	public ArrayList <WebProperty> rowDoesNotExistsList = new ArrayList<>();
 	public ArrayList <WebProperty> matchedWebRowList = new ArrayList<>();
 	public ArrayList <WebPropertyComparison> webRowList = new ArrayList<>();
 	
@@ -72,50 +75,49 @@ public class DB_Utilities {
 		return webRowObjectList;
 	}
 	
-	public ArrayList<WebProperty> checkForWebRowMatches(ArrayList<WebProperty> expectedRow, 
+	public boolean checkForWebRowMatches(ArrayList<WebProperty> expectedRow, 
 				ArrayList<WebProperty> comparedRow) {
 		
+		//comparing the two lists for size, expected and Compared
 		boolean matchSize = (expectedRow.size() == comparedRow.size());
-		
-//		for (int i = 0; i < expectedRow.size(); i++) {
+		//loop over expected list 
 		for(WebProperty expectedWebProp : expectedRow){
 			
-//			WebProperty expectedWebProp = expectedRow.get(i);
-			
+			//Obtaining the expected key and brand to compare
 			String expectedKey = expectedWebProp.getKey();
 			String expectedBrand = expectedWebProp.getBrand();
-			boolean match = false;
 			
-			for (int j = 0; j < comparedRow.size(); j++) {
-				
-				WebProperty compareWebProp = comparedRow.get(j);
-				String compareKey = compareWebProp.getKey();
-				String compareBrand = compareWebProp.getBrand();
-				
-				if(expectedKey.equals(compareKey) && expectedBrand.equals(compareBrand)) {
-					
-					WebPropertyComparison webMatch = new WebPropertyComparison(expectedWebProp, compareWebProp);
-					webRowList.add(webMatch);
+			//if match found then add to matched list else add to no match list
+			boolean rowMatch = false;
+			//loop over the compared list to locate a match on the key and brand
+			for (WebProperty compRow : comparedRow) {
 
-					expectedMatchedWebRowList.add(expectedWebProp);
-					matchedWebRowList.add(compareWebProp);
-					match = true;
+				//Checking the values of the key and brand and then value within the statement  
+				if(expectedWebProp.getKey().equals(compRow.getKey()) && expectedWebProp.getBrand().equals(compRow.getBrand()) ) {
+					
+					//Creating the webcompare object to compare and then add to list if true
+					WebPropertyComparison webMatch = new WebPropertyComparison(expectedWebProp, compRow);
+					
+					if(webMatch.isMatch()) {
+						matchedWebRowList.add(expectedWebProp);
+
+					}else {
+						valuesMismatchList.add(expectedWebProp);
+						
+					}
+					rowMatch = true;
 					break;
 				}
+				
 			}
-			if(!match) {
-				noMatchedWebRowList.add(expectedWebProp);
+			if(!rowMatch) {
+				rowDoesNotExistsList.add(expectedWebProp);
 			}
 		}
-		return noMatchedWebRowList;
-	}
-	
-	public void compareValues() {
-		
+		return matchSize;
 	}
 	
 	public void displayWebProp(WebProperty webProp){
-		
 		StringBuffer buffer = new StringBuffer();
 		buffer.append("ID: " + webProp.getId() +" | ");
 		buffer.append("Key: " + webProp.getKey() +" | ");

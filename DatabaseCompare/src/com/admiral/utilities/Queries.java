@@ -5,13 +5,16 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import org.testng.annotations.Test;
+
+import com.admiral.controllers.WebPropertyController;
 import com.admiral.tables.WebProperty;
 
 public class Queries {
 	
 	
 	public ResultSet getWebProperties(String database) {
-		DB_Utilities dbUtils = new DB_Utilities();
+		WebPropertyController dbUtils = new WebPropertyController();
 		ResultSet rs = null;
 		String webPropQuery = "Select * from WebProperties";
 		
@@ -30,7 +33,7 @@ public class Queries {
 		return rs;
 	}
 	
-	
+	@Test
 	public void displayWebData(ResultSet rs){
 		
 		try {
@@ -43,7 +46,7 @@ public class Queries {
 				System.out.println(buffer.toString());
 			}
 		} catch (SQLException e) {
-			DB_Utilities dbUtils = new DB_Utilities();
+			WebPropertyController dbUtils = new WebPropertyController();
 			dbUtils.processException(e);
 		}
 	}

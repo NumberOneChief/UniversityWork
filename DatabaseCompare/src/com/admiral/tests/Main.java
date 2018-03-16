@@ -2,31 +2,40 @@ package com.admiral.tests;
 
 import java.util.ArrayList;
 
+import com.admiral.controllers.WebPropertyController;
 import com.admiral.tables.WebProperty;
 import com.admiral.tables.WebPropertyComparison;
 import com.admiral.utilities.DB_Type;
-import com.admiral.utilities.DB_Utilities;
 
 public class Main {
 
 	static ArrayList <WebProperty> expectedWebPropList;
 	static ArrayList <WebProperty> compareWebPropList;
-	static ArrayList <WebProperty> unMatchedRowList;
-	
 	
 	public static void main(String[] args) {
-		DB_Utilities dbUtils = new DB_Utilities();
-		expectedWebPropList = dbUtils.creatWebRowObject(DB_Type.MYSQL,"webproperties");
-		compareWebPropList = dbUtils.creatWebRowObject(DB_Type.MYSQL, "Webproperties2");
-		unMatchedRowList = dbUtils.checkForWebRowMatches(expectedWebPropList, compareWebPropList);
+		WebPropertyController webController = new WebPropertyController();
 		
-		for (WebProperty webProp : unMatchedRowList) {
-			System.out.printf("%35s","|**** Missing Row ****|\n");
-			System.out.printf("%35s","-----------------------\n");
-			dbUtils.displayWebProp(webProp);
+		expectedWebPropList = webController.creatWebRowObject(DB_Type.MYSQL,"webproperties");
+		compareWebPropList = webController.creatWebRowObject(DB_Type.MYSQL, "Webproperties2");
+		webController.checkForWebRowMatches(expectedWebPropList, compareWebPropList);
+		
+		System.out.printf("%35s","|**** Missing Row ****|\n");
+		System.out.printf("%35s","-----------------------\n");
+		for (WebProperty webProp : webController.rowDoesNotExistsList) {
+
+			webController.displayWebProp(webProp);
 		}
 		
-		for(WebPropertyComparison webComparison : dbUtils.webRowList){
+		System.out.printf("%35s","|-------------------------|");
+		System.out.printf("\n%36s","|**** Incorrect Value ****|\n");
+		System.out.printf("%36s","|-------------------------|\n");
+		for (WebProperty webProp : webController.valuesMismatchList) {
+
+			webController.displayWebProp(webProp);
+		}
+		
+		
+		for(WebPropertyComparison webComparison : webController.webRowList){
 			StringBuffer buffer = new StringBuffer();
 			
 			buffer.append(webComparison.getWebProperty().getBrand());
