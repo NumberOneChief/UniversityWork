@@ -11,6 +11,7 @@
 			<url>http://jcenter.bintray.com</url>
 		</repository>
 	</repositories>
+	
 	<dependencies>
 		<dependency>
 	  		<groupId>org.testng</groupId>
@@ -19,7 +20,6 @@
 	  		<scope>test</scope>
 		</dependency>
 	</dependencies>
- 
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
