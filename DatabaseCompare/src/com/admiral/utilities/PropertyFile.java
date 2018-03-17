@@ -11,9 +11,13 @@ import java.util.ResourceBundle;
 public class PropertyFile {
 	//Creating new resource object and setting the path of the property file
 	private static ResourceBundle res = ResourceBundle.getBundle("com.admiral.resources.config" );
+	// String to store the connection string
 	String connString;
-	
-	//Getting the Oracle connection string from the property file and returning
+		
+	/**
+	 * Getting the Oracle connection string from the property file and returning
+	 * @return
+	 */
 	public String getOracleUrl() {
 	    connString = res.getString("oracleconnstring");
 		return connString;

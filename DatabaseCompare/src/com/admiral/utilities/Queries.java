@@ -10,9 +10,18 @@ import org.testng.annotations.Test;
 import com.admiral.controllers.WebPropertyController;
 import com.admiral.tables.WebProperty;
 
+/**
+ * Class to deal with all the different types of queries to databases 
+ * @author garet
+ *
+ */
 public class Queries {
 	
-	
+	/**
+	 * This will query the webproperty table and return a resultset of all the data
+	 * @param database result set of data 
+	 * @return the result set of data 
+	 */
 	public ResultSet getWebProperties(String database) {
 		WebPropertyController dbUtils = new WebPropertyController();
 		ResultSet rs = null;
