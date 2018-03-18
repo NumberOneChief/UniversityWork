@@ -69,6 +69,7 @@ public class WebPropertyController {
 		ArrayList <WebProperty>webRowObjectList = new ArrayList<>();
 		Queries webQuery = new Queries();
 		ResultSet rs = null;
+		Connection conn;
 		WebProperty webProp;
 		int id;
 		String key;
@@ -76,7 +77,7 @@ public class WebPropertyController {
 		String value; 
 		
 		try {
-			getConnection(dbType,database);
+			conn = getConnection(dbType,database);
 			rs = webQuery.getWebProperties(database);
 			while(rs.next()) {
 				id = rs.getInt("ID");
@@ -87,6 +88,7 @@ public class WebPropertyController {
 				webRowObjectList.add(webProp);
 			}
 			webQuery.displayWebData(rs);
+			conn.close();
 			
 		} catch (SQLException e) {
 			processException(e);
