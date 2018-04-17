@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="workflow-scm-step">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/workflow-scm-step/WEB-INF/lib/workflow-scm-step.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pipeline-stage-step">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pipeline-stage-step/WEB-INF/lib/pipeline-stage-step.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

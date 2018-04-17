@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/ws-cleanup/WEB-INF/lib/ws-cleanup.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/ws-cleanup/WEB-INF/lib/jboss-marshalling-river-1.4.9.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/ws-cleanup/WEB-INF/lib/jboss-marshalling-1.4.9.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

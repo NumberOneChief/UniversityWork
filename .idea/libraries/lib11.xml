@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib11">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pam-auth/WEB-INF/lib/libpam4j-1.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pam-auth/WEB-INF/lib/jna-3.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pam-auth/WEB-INF/lib/pam-auth.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

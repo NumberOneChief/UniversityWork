@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/credentials/WEB-INF/lib/antlr4-runtime-4.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/credentials/WEB-INF/lib/credentials.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/credentials/WEB-INF/lib/org.abego.treelayout.core-1.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

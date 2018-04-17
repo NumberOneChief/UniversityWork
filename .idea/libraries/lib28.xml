@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib28">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pipeline-rest-api/WEB-INF/lib/pipeline-rest-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pipeline-rest-api/WEB-INF/lib/symbol-annotation-1.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pipeline-rest-api/WEB-INF/lib/groovy-sandbox-1.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

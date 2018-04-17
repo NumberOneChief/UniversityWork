@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pipeline-model-declarative-agent">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pipeline-model-declarative-agent/WEB-INF/lib/pipeline-model-declarative-agent.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

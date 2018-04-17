@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pipeline-stage-tags-metadata">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pipeline-stage-tags-metadata/WEB-INF/lib/pipeline-stage-tags-metadata.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

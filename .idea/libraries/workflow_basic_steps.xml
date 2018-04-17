@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="workflow-basic-steps">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/workflow-basic-steps/WEB-INF/lib/workflow-basic-steps.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

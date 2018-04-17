@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="lib4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pipeline-model-api/WEB-INF/lib/pipeline-model-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pipeline-model-api/WEB-INF/lib/jackson-datatype-json-org-2.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pipeline-model-api/WEB-INF/lib/json-20090211.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pipeline-model-api/WEB-INF/lib/jackson-core-2.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pipeline-model-api/WEB-INF/lib/pipeline-model-json-shaded-1.2.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

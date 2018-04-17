@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="lib5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/subversion/WEB-INF/lib/jsch.agentproxy.pageant-0.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/subversion/WEB-INF/lib/jna-platform-4.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/subversion/WEB-INF/lib/svnkit-1.9.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/subversion/WEB-INF/lib/jsch.agentproxy.core-0.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/subversion/WEB-INF/lib/jsch.agentproxy.svnkit-trilead-ssh2-0.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/subversion/WEB-INF/lib/jsch.agentproxy.usocket-jna-0.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/subversion/WEB-INF/lib/jna-4.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/subversion/WEB-INF/lib/jsch.agentproxy.usocket-nc-0.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/subversion/WEB-INF/lib/jsch.agentproxy.connector-factory-0.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/subversion/WEB-INF/lib/antlr-runtime-3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/subversion/WEB-INF/lib/subversion.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/subversion/WEB-INF/lib/sequence-library-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/subversion/WEB-INF/lib/trilead-ssh2-1.0.0-build221.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/subversion/WEB-INF/lib/jsch.agentproxy.sshagent-0.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/subversion/WEB-INF/lib/sqljet-1.1.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/subversion/WEB-INF/lib/platform-3.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

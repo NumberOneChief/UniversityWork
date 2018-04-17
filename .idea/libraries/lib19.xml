@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib19">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/mapdb-api/WEB-INF/lib/mapdb-1.0.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/mapdb-api/WEB-INF/lib/mapdb-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

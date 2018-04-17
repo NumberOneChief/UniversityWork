@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pipeline-github-lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pipeline-github-lib/WEB-INF/lib/pipeline-github-lib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

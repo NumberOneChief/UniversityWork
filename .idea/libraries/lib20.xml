@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib20">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/script-security/WEB-INF/lib/script-security.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/script-security/WEB-INF/lib/groovy-sandbox-1.18.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

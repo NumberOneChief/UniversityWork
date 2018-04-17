@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="lib27">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/workflow-cps-global-lib/WEB-INF/lib/workflow-cps-global-lib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/workflow-cps-global-lib/WEB-INF/lib/org.abego.treelayout.core-1.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/workflow-cps-global-lib/WEB-INF/lib/commons-lang3-3.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/workflow-cps-global-lib/WEB-INF/lib/ivy-2.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/workflow-cps-global-lib/WEB-INF/lib/jboss-marshalling-1.4.9.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/workflow-cps-global-lib/WEB-INF/lib/jboss-marshalling-river-1.4.9.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/workflow-cps-global-lib/WEB-INF/lib/antlr4-runtime-4.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

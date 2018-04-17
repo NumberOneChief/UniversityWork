@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib8">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/structs/WEB-INF/lib/symbol-annotation-1.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/structs/WEB-INF/lib/structs.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

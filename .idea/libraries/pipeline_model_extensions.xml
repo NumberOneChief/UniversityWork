@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pipeline-model-extensions">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pipeline-model-extensions/WEB-INF/lib/pipeline-model-extensions.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/antisamy-markup-formatter/WEB-INF/lib/antisamy-markup-formatter.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/antisamy-markup-formatter/WEB-INF/lib/owasp-html-sanitizer-r88.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="authentication-tokens">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/authentication-tokens/WEB-INF/lib/authentication-tokens.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

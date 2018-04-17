@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="scm-api">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/scm-api/WEB-INF/lib/scm-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

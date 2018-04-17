@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="lib22">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/github-api/WEB-INF/lib/github-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/github-api/WEB-INF/lib/okhttp-2.7.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/github-api/WEB-INF/lib/okhttp-urlconnection-2.7.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/github-api/WEB-INF/lib/github-api-1.90.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/github-api/WEB-INF/lib/okio-1.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

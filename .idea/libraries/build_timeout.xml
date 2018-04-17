@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="build-timeout">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/build-timeout/WEB-INF/lib/build-timeout.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

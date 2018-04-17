@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="lib1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/git/WEB-INF/lib/git.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/git/WEB-INF/lib/httpclient-4.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/git/WEB-INF/lib/joda-time-2.9.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/git/WEB-INF/lib/annotation-indexer-1.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/git/WEB-INF/lib/httpcore-4.4.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/git/WEB-INF/lib/bridge-method-annotation-1.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

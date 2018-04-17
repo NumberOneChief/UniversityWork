@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib15">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/gradle/WEB-INF/lib/dry-run-lib-0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/gradle/WEB-INF/lib/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

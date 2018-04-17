@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib21">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pipeline-model-definition/WEB-INF/lib/annotation-indexer-1.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pipeline-model-definition/WEB-INF/lib/jackson-core-2.7.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pipeline-model-definition/WEB-INF/lib/pipeline-model-definition.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="lib18">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/jackson2-api/WEB-INF/lib/jackson-databind-2.8.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/jackson2-api/WEB-INF/lib/jackson-datatype-jsr310-2.8.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/jackson2-api/WEB-INF/lib/jackson-core-2.8.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/jackson2-api/WEB-INF/lib/jackson-annotations-2.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/jackson2-api/WEB-INF/lib/jackson2-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

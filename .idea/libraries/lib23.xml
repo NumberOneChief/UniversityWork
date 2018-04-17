@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib23">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pipeline-stage-view/WEB-INF/lib/pipeline-stage-view.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/pipeline-stage-view/WEB-INF/lib/symbol-annotation-1.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

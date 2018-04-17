@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="lib9">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/token-macro/WEB-INF/lib/parboiled-java-1.1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/token-macro/WEB-INF/lib/token-macro.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/token-macro/WEB-INF/lib/json-smart-2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/token-macro/WEB-INF/lib/parboiled-core-1.1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/token-macro/WEB-INF/lib/json-path-2.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/token-macro/WEB-INF/lib/accessors-smart-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="lib26">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/github/WEB-INF/lib/commons-lang3-3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/github/WEB-INF/lib/jackson-databind-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/github/WEB-INF/lib/github.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/github/WEB-INF/lib/okhttp-urlconnection-2.7.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/github/WEB-INF/lib/okhttp-2.7.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/github/WEB-INF/lib/groovy-sandbox-1.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/github/WEB-INF/lib/slf4j-jdk14-1.7.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/github/WEB-INF/lib/okio-1.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/github/WEB-INF/lib/jackson-core-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/github/WEB-INF/lib/jackson-annotations-2.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

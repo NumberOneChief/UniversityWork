@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib24">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/workflow-cps/WEB-INF/lib/groovy-cps-1.22.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/workflow-cps/WEB-INF/lib/diff4j-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/workflow-cps/WEB-INF/lib/workflow-cps.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="timestamper">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/timestamper/WEB-INF/lib/timestamper.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="lib10">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/apache-httpcomponents-client-4-api/WEB-INF/lib/httpclient-cache-4.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/apache-httpcomponents-client-4-api/WEB-INF/lib/httpmime-4.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/apache-httpcomponents-client-4-api/WEB-INF/lib/httpcore-4.4.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/apache-httpcomponents-client-4-api/WEB-INF/lib/httpclient-4.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/apache-httpcomponents-client-4-api/WEB-INF/lib/fluent-hc-4.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/DatabaseCompare/bin/apache-httpcomponents-client-4-api/WEB-INF/lib/apache-httpcomponents-client-4-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
